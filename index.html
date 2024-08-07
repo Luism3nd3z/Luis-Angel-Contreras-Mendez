@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum PWA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/serviceWorker.js')
+                .then((registration) => {
+                    console.log('Service Worker registrado con éxito:', registration);
+                })
+                .catch((error) => {
+                    console.error('Error al registrar el Service Worker:', error);
+                });
+        }
+    </script>
+    <div class="container">
+        <div class="sidebar">
+            <img src="perfil.jpg" alt="Tu Foto">
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>Correo Electrónico: luis@email.com</p>
+                <p>Teléfono: (123) 456-7890</p>
+                <p>Dirección: Calle Principal, Ciudad, País</p>
+            </section>
+            <section id="habilidades">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li>HTML5 y CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>Desarrollo web responsive</li>
+                    <li>Gestión de proyectos</li>
+                </ul>
+            </section>
+        </div>
+        <div class="main-content">
+            <header>
+                <h1>Luis Angel Contreras Mendez</h1>
+            </header>
+            <section id="acerca-de-mi">
+                <h2>Acerca de Mí</h2>
+                <p>¡Hola! Soy Luis Mendez, un apasionado desarrollador web con experiencia en la creación de sitios web
+                    atractivos y funcionales. Me esfuerzo por aprender constantemente y mantenerme al tanto de las
+                    últimas tendencias en desarrollo web.</p>
+            </section>
+            <section id="experiencia-laboral">
+                <h2>Experiencia Laboral</h2>
+                <ul>
+                    <li>
+                        <h3>Desarrollador Web - ABC Company</h3>
+                        <p>Fecha: Enero 2020 - Presente</p>
+                        <p>Descripción: Desarrollo de aplicaciones web utilizando HTML, CSS, JavaScript, etc.</p>
+                    </li>
+                    <!-- Agrega más experiencias laborales aquí si es necesario -->
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

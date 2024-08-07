@@ -1,0 +1,20 @@
+{
+    "name": "Currículum PWA",
+    "short_name": "Mi CV",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#f2f2f2",
+    "theme_color": "#007BFF",
+    "icons": [
+        {
+            "src": "icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icon1.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ]
+}
